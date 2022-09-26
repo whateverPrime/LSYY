@@ -1,0 +1,367 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: white;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* 1. header */
+.header {
+	/* padding: 30px; */
+	text-align: center;
+	background: white;
+}
+.top-bar {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: url('../images/background/top_bar.jpg') no-repeat center center;
+	background-size: 100%;
+}
+.header h1 {
+	font-size: 50px;
+}
+/* 2. topnav */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+.topnav a {
+	width: 16.6%;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* 3. slider */
+.slider img {
+	width: 100%;
+}
+
+/* 4. introduction */
+.introduction {
+	/* width: 100%; */
+	/* background-color: skyblue; */
+	padding: 70px 0;
+}
+
+.introduction .title {
+	text-align: center;
+}
+
+.introduction .title h2 {
+	font-size: 32px;
+}
+.introduction .info {
+	width: 100%;
+}
+.introduction .fl {
+	width: 50%;
+	padding: 20px;
+}
+.introduction .fl h4 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+.introduction .fl p {
+	font-size: 16px;
+	color: #848484;
+	line-height: 26px;
+	font-weight: 300;
+}
+.introduction .fr {
+	width: 50%;
+	/* background-color: red; */
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.introduction .fr img {
+	width: 100%;
+}
+.link_btn a {
+	position: relative;
+	background: #48c7ec;
+	font-size: 14px;
+	line-height: 46px;
+	font-weight: 600;
+	color: #ffffff;
+	border: 2px solid #48c7ec;
+	display: inline-block;
+	padding: 0 38px;
+	transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+	text-decoration: none;
+	display: inline-block;
+	outline: none;
+}
+.link_btn a:hover {
+	background-color: #ffffff;
+	color: #48c7ec;
+}
+
+/* 5. production */
+.title {
+	text-align: center;
+}
+h2 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 16px;
+}
+.production {
+	margin-top: 70px;
+}
+.production .product_box {
+	margin-top: 30px;
+	/* background-color: skyblue; */
+}
+.production .product_box li {
+	display: block;
+	width: 33.3%;
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	text-align: center;
+}
+.LSYY_product {
+	width: 100%;
+}
+.production .LSYY_product img {
+	width: 100%;
+}
+.production .LSYY_product_describe a {
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+}
+.production .LSYY_product_describe a:hover {
+	color: #23527c;
+}
+
+/* 6. procedure  */
+.procedure {
+	margin-top: 70px;
+}
+.procedure .procedure_box {
+	margin-top: 30px;
+	/* background-color: skyblue; */
+}
+.procedure .procedure_box li {
+	display: block;
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+.procedure .LSYY_procedure {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.procedure .procedure_box img {
+	/* float: right; */
+	width: 100%;
+}
+
+/* 7. equipment  */
+.equipment {
+	margin-top: 70px;
+	/* padding: 30px; */
+	/* background-color: cyan; */
+}
+.equipment_info {
+	width: 50%;
+	padding: 20px;
+	/* background-color: pink; */
+}
+.equipment .equipment_info p {
+	display: inline-block;
+	font-size: 16px;
+	color: #848484;
+	line-height: 26px;
+	font-weight: 300;
+}
+.equipment_imgBox {
+	width: 50%;
+	/* padding: 20px; */
+	/* background-color: skyblue; */
+}
+.equipment_imgBox img {
+	float: right;
+	width: 75%;
+}
+
+/* 8. service  */
+.service {
+	margin-top: 70px;
+	background-color: #f4f4f4;
+}
+.service li {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 300px;
+	border-right: 1px solid #e8e8e8;
+	/* background-color: cyan; */
+}
+.service .serviceTitle {
+	line-height: 300px;
+}
+
+.service li:hover .serviceDetail {
+	bottom: 0;
+}
+.service .serviceTitle {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.serviceTitle h4 {
+	color: #333;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.service .serviceDetail {
+	position: absolute;
+	display: table;
+	bottom: 100%;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	background-color: #48c7ec;
+	transition: bottom 0.6s;
+}
+.serviceDetail p {
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+/* 9. footer */
+.footer {
+	background: #222;
+}
+.footer > ul {
+	width: 100%;
+}
+.footerBox {
+	float: left;
+	height: 300px;
+	width: 25%;
+	padding-top: 50px;
+}
+.footerBox h3 {
+	font-size: 24px;
+	font-weight: 500;
+	color: #848484;
+}
+.footerBox a {
+	text-decoration: none;
+	position: relative;
+	display: block;
+	padding-left: 15px;
+	color: #848484;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+.footerBox a:hover {
+	color: #48c7ec;
+}
+.footerBox p {
+	padding-left: 15px;
+}
+.footerBox i {
+	color: #848484;
+}
+.footerBox .logo img {
+	width: 50%;
+}
+.footerService {
+	margin-top: 50px;
+}
+.footerService li {
+	margin-top: 10px;
+}
+.reventActive {
+	margin-top: 50px;
+}
+.reventActive li {
+	margin-top: 10px;
+}
+.reventActive p {
+	color: #48c7ec;
+}
+.contactInfo {
+	margin-top: 50px;
+}
+.contactInfo li {
+	margin-top: 10px;
+}
+.contactMethods {
+	margin-top: 30px;
+}
+.contactMethods li {
+	float: left;
+}
+/* 10. copyright  */
+.copyright {
+	width: 100%;
+	background-color: #1d1d1d;
+	color: #848484;
+}
+.copyright p {
+	font-size: 16px;
+	color: #848484;
+	line-height: 26px;
+	font-weight: 300;
+}
+.copyrightInfo {
+	padding: 25px 0;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+	.leftcolumn,
+	.rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+	.service ul li {
+		float: none;
+		width: 100%;
+	}
+	.footerBox {
+		font: none;
+		width: 100%;
+	}
+}
